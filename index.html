@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <header>
+    <h1 id="judul"><center>Catat Pengeluaran Anda di Web Kami</center></h2>
+    <h1 id="lihat-pengeluaran"><a href="struk.php"><center>Lihat Catatan Pengeluaran</center></a></h1>
+  </header>
+
+  <body>
+    <div class="container-kalender">
+        <img class="arrow-kalender" src="left-arrow.png" alt="">
+        <div class="calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+    </div>   
+  
+
+  <div class="row">
+    <div class="column">
+      <div class="tabel-kalkulator">
+        <div id="display"></div>
+        <button class="span-two tombol">C</button>
+          <button class="tombol">←</button>
+          <button class="tombol">/</button>
+          <button class="tombol">1</button>
+          <button class="tombol">2</button>
+          <button class="tombol">3</button>
+          <button class="tombol">*</button>
+          <button class="tombol">4</button>
+          <button class="tombol">5</button>
+          <button class="tombol">6</button>
+          <button class="tombol">+</button>
+          <button class="tombol">7</button>
+          <button class="tombol">8</button>
+          <button class="tombol">9</button>
+          <button class="tombol">-</button>
+          <button class="tombol">.</button>
+          <button class="tombol">0</button>
+          <button class="span-two tombol">=</button>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="input-barang">
+          <h1>Pengeluaran</h1>
+          <form method= "post" action="proses.php">
+            <input name="keluaran" type="text" >
+            <button>Submit</button>
+          </form>
+        </div>
+      </div>
+      
+  </div>
+
+    <script src="kalkulator.js"></script>
+    <script src="kalender.js"></script>
+  </body>
+</html>

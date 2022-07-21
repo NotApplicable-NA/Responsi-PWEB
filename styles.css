@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+::-webkit-scrollbar{
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track{
+    background-color: rgb(15, 205, 205);
+  }
+  
+::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 83, 83);
+    border-radius: 5px;
+  }
+
+  #judul{
+    font-size: 5em;
+  }
+  
+  body {
+    padding: auto;
+    margin: auto;
+    background: linear-gradient(to right, #b26903, #ef4e4e);
+  }
+  
+  .tabel-kalkulator {
+    float: left;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
+  
+  .tabel-kalkulator > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+  }
+  
+  .tabel-kalkulator > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+  }
+  
+  .span-two {
+    grid-column: span 2;
+  }
+  
+  #display {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  
+  #display {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+  }
+  
+  #display {
+    color: white;
+    font-size: 2.5rem;
+  }
+  .row{
+    margin: 0px 10px;
+    align-items: center;
+    display :flex;
+  }
+
+  .column{
+    flex: 50%;
+  }
+  
+
+  html {
+    font-size: 50.5%;
+  }
+
+  .container-kalender {
+    position: fixed;
+    right: 0;
+    transition: 2s;
+    transform: translateX(46em);
+    background-color: pink;
+    width: 365px;
+    height: 420px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100%;
+    color: #eee;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    align-content: right;
+  }
+
+  .arrow-kalender{
+    width: 5em;
+    height: 5em;
+    padding: 15px;
+    background-color: pink;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .container-kalender:hover{
+    transform: translateX(0);
+  }
+  
+  .calendar {
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+
+  }
+  
+  .month {
+    width: 100%;
+    height: 12rem;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .month p {
+    font-size: 1.6rem;
+  }
+  
+  .weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+  }
+  
+  .days div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem / 7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+  }
+  
+  .days div:hover:not(.today) {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+  }
+  
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+  
+  .today {
+    background-color: green;
+  }
+
+  header{
+    width: auto;
+  }
+
+  #lihat-pengeluaran{
+    background-color: rgb(183, 51, 136);
+    width: 20%;
+    height: 2em;
+    margin: 10px auto ;
+    border-radius: 10px;
+    font-weight: 100;
+    box-shadow: 0 10px 10px #222227;
+  }
+  #lihat-pengeluaran a{
+    text-decoration: none;
+  }
+
+  #lihat-pengeluaran:hover{
+    background-color: rgb(192, 10, 83);
+  }
